@@ -64,7 +64,7 @@ section{margin-bottom:120px}
 
 /* ---------- statement ---------- */
 .mark{display:flex;align-items:center;gap:12px;margin-bottom:72px}
-.mark-word{font-weight:800;font-size:clamp(30px,8vw,48px);letter-spacing:-.035em;line-height:1}
+.mark-word{font-weight:800;font-size:clamp(18px,calc((100vw - 32px) / 12),48px);letter-spacing:-.035em;line-height:1}
 .mark-word{white-space:nowrap;min-height:1em}
 .mark-cursor.typing{animation:none}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -327,7 +327,7 @@ footer{position:relative;z-index:1;max-width:calc(var(--col) + 32px);margin:0 au
   // typewriter: name -> "looking for work" -> name, forever
   var el=document.getElementById('type'),cur=document.querySelector('.mark-cursor');
   if(el&&!reduce){
-    var words=['BRANDON LUEKEN','LOOKING FOR WORK'],w=0;
+    var words=['BRANDON LUEKEN','IS LOOKING FOR WORK'],w=0;
     el.textContent='';
     function typeWord(word,i){
       cur.classList.add('typing');
